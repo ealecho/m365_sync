@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "autoname": "field:m365_group_id",
+ "creation": "2025-11-05 02:57:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "m365_group_id",
+  "m365_group_name",
+  "column_break_3",
+  "erpnext_role",
+  "section_break_5",
+  "enabled",
+  "auto_sync",
+  "sync_frequency",
+  "section_break_9",
+  "last_sync",
+  "sync_status",
+  "members_synced"
+ ],
+ "fields": [
+  {
+   "fieldname": "m365_group_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "M365 Group ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "m365_group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "M365 Group Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "erpnext_role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ERPNext Role",
+   "options": "Role",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Sync Settings"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_sync",
+   "fieldtype": "Check",
+   "label": "Auto Sync"
+  },
+  {
+   "default": "Daily",
+   "fieldname": "sync_frequency",
+   "fieldtype": "Select",
+   "label": "Sync Frequency",
+   "options": "Hourly\nDaily\nWeekly"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Sync Status"
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sync_status",
+   "fieldtype": "Small Text",
+   "label": "Sync Status",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "members_synced",
+   "fieldtype": "Int",
+   "label": "Members Synced",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-11-05 02:57:00",
+ "modified_by": "Administrator",
+ "module": "M365 Sync",
+ "name": "M365 Group Role Mapping",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

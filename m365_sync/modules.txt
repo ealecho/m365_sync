@@ -1,0 +1,8 @@
+{
+ "name": "m365_sync",
+ "app_name": "m365_sync",
+ "app_title": "M365 Sync",
+ "app_version": "0.0.1",
+ "app_description": "Sync Microsoft 365 groups to ERPNext roles",
+ "app_license": "MIT"
+}

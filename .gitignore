@@ -1,0 +1,7 @@
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+m365_sync/docs/current
+m365_sync/public/files/*

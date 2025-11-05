@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "creation": "2025-11-05 02:57:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "section_break_3",
+  "tenant_id",
+  "client_id",
+  "client_secret",
+  "section_break_7",
+  "sync_on_login",
+  "remove_roles_on_group_removal",
+  "section_break_10",
+  "last_sync",
+  "sync_log"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Microsoft 365 Credentials"
+  },
+  {
+   "fieldname": "tenant_id",
+   "fieldtype": "Data",
+   "label": "Tenant ID",
+   "mandatory_depends_on": "enabled"
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Password",
+   "label": "Client ID",
+   "mandatory_depends_on": "enabled"
+  },
+  {
+   "fieldname": "client_secret",
+   "fieldtype": "Password",
+   "label": "Client Secret",
+   "mandatory_depends_on": "enabled"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Sync Options"
+  },
+  {
+   "default": "1",
+   "description": "Sync user roles automatically when they login",
+   "fieldname": "sync_on_login",
+   "fieldtype": "Check",
+   "label": "Sync on Login"
+  },
+  {
+   "default": "0",
+   "description": "Remove ERPNext roles when user is removed from M365 group",
+   "fieldname": "remove_roles_on_group_removal",
+   "fieldtype": "Check",
+   "label": "Remove Roles on Group Removal"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sync_log",
+   "fieldtype": "Small Text",
+   "label": "Sync Log",
+   "read_only": 1
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-11-05 02:57:00",
+ "modified_by": "Administrator",
+ "module": "M365 Sync",
+ "name": "M365 Sync Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
